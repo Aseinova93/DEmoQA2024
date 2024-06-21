@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/bmb49/IdeaProjects/DemoQAWinter24">
+        <packages>
+            <package name="java">
+
+            </package>
+        </packages>
+        <classes>
+            <class name="com.demoqa.elements.TextBox">
+                <methods>
+                    <include name="fillBlank"/>
+                </methods>
+            </class>
+            <class name="com.demoqa.elements.TextBoxHomeWorkTest">
+                <methods>
+                    <include name="registrationTest"/>
+                </methods>
+            </class>
+            <class name="com.demoqa.locators.BasicLocators">
+                <methods>
+                    <include name="findByidTest"/>
+                </methods>
+            </class>
+            <class name="com.demoqa.locators.FoodList">
+                <methods>
+                    <include name="openLinks"/>
+                </methods>
+            </class>
+            <class name="com.demoqa.locators.NambaHomeWork">
+                <methods>
+                    <include name="orderFoodAndRegistration"/>
+                </methods>
+            </class>
+            <class name="com.demoqa.waits.WaitsDemo">
+                <methods>
+                    <include name="setUp"/>
+                </methods>
+            </class>
+            <class name="com.demoqa.waits.WaitsDemoHomeWork">
+                <methods>
+                    <include name="setUp"/>
+                </methods>
+            </class>
+            <class name="ButtonsTest">
+
+            </class>
+            <class name="FrameTest">
+
+            </class>
+        </classes>
+
+    </test>
+</suite>
