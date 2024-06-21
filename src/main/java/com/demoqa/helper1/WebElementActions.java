@@ -20,11 +20,11 @@ public class WebElementActions {
 
     public Actions actions = new Actions(DriverManager.getDriver());
 
-    public  WebElementActions click(WebElement element){
-//        JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
-//        js.executeScript("arguments[0].scrollIntoView(true);", element);
-//        waitElementToBeVisible(element);
-//        highLightElement(element);
+     public  WebElementActions click(WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+        waitElementToBeVisible(element);
+        highLightElement(element);
         element.click();
         return this;
     }
